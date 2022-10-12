@@ -15,8 +15,16 @@
     },
     "arguments": {
         "execute": {
-           "inArguments":[],
-          "outArguments": [],
+           "inArguments":[
+            {
+              "contactIdentifier": "{{Contact.Key}}"
+            }
+           ],
+          "outArguments": [
+            {
+              "foundSignupDate":""
+            }
+          ],
           "url": "https://customjourneyactivity-nics.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
