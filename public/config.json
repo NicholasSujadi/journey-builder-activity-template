@@ -35,6 +35,7 @@
         }
     },
     "configurationArguments": {
+      "applicationExtensionKey": "a44a58fa-905b-4054-a060-a15cb9d8bedc",
       "save": {
         "url": "https://customjourneyactivity-nics.herokuapp.com/journeybuilder/save",
           "verb": "POST",
