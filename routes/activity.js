@@ -76,8 +76,8 @@ exports.edit = function (req, res) {
 exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
-    console.log("Successfully save 123");
-    
+    console.log("Successfully save1");
+    logger.debug("Successfully save2");
     logData(req);
     res.send(200, 'Save');
 };
@@ -130,6 +130,7 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
+    logger.debug('Journey Validated Successfully');
     logData(req);
     res.send(200, 'Validate');
 };
