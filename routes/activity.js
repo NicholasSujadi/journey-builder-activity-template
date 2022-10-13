@@ -7,8 +7,8 @@ const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
 var util = require('util');
 var http = require('https');
 
-var Logger = (function () {
-    var Logger = {
+var logger = (function () {
+    var logger = {
         log: function (message) {
             if (window.console && typeof console.log === "function") {
                 console.log(message);
@@ -16,7 +16,7 @@ var Logger = (function () {
         }
     };
 
-    return Logger;
+    return logger;
 }());
 
 exports.logExecuteData = [];
